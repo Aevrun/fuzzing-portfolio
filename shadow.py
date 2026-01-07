@@ -38,7 +38,7 @@ def main():
         target = args.target
         start,end = port_parser(args.ports)
         run_scanner(target,start,end)
-    elif args.command == "headers":
+    elif args.command == "header":
         run_header_tester(args.link)
     elif args.command == "crawl":
         run_crawler(args.url)
