@@ -2,6 +2,7 @@ import argparse
 import logging
 
 from src.crawler import run_crawler
+from src.fuzzer import run_fuzzer
 from src.headers import run_header_tester
 from src.scanner import run_scanner
 from src.util import port_parser
@@ -32,6 +33,11 @@ def main():
     crawler_parser = subparser.add_parser("crawl",help="Web link crawler")
     crawler_parser.add_argument("-u","--url",required=True)
 
+    # fuzz command
+    fuzz_parser = subparser.add_parser("fuzz",help="Fuzzing server file system")
+    fuzz_parser.add_argument("-u","--url",required=True)
+    fuzz_parser.add_argument("-w","--wordlist",required=True)
+
     args = parser.parse_args()
 
     if args.command == "scan":
@@ -42,6 +48,8 @@ def main():
         run_header_tester(args.link)
     elif args.command == "crawl":
         run_crawler(args.url)
+    elif args.command == "fuzz":
+        run_fuzzer(args.url,args.wordlist)
 
 if __name__ == "__main__":
     main()
