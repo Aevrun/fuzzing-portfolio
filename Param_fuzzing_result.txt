@@ -1,0 +1,2 @@
+Found: http://testphp.vulnweb.com/listproducts.php?cat=7210 (Diff: -120)
+Found: http://testphp.vulnweb.com/listproducts.php?cat=NPFzi (Diff: -2786)

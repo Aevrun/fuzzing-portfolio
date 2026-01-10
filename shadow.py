@@ -4,6 +4,7 @@ import logging
 from src.crawler import run_crawler
 from src.fuzzer import run_fuzzer
 from src.headers import run_header_tester
+from src.param_fuzzer import run_param_fuzzer
 from src.scanner import run_scanner
 from src.util import port_parser
 
@@ -39,6 +40,11 @@ def main():
     fuzz_parser.add_argument("-w","--wordlist",required=True)
     fuzz_parser.add_argument("-e","--extension",default="")
 
+    # Param_fuzz command
+    param_fuzz_parser = subparser.add_parser("param_fuzz",help="fuzz parameter on server")
+    param_fuzz_parser.add_argument('-u','--url',required=True)
+    param_fuzz_parser.add_argument("-w","--wordlist",required=True)
+
     args = parser.parse_args()
 
     if args.command == "scan":
@@ -51,6 +57,8 @@ def main():
         run_crawler(args.url)
     elif args.command == "fuzz":
         run_fuzzer(args.url,args.wordlist,args.extension)
+    elif args.command == "param_fuzz":
+        run_param_fuzzer(args.url,args.wordlist)
 
 if __name__ == "__main__":
     main()
