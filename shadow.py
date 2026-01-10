@@ -1,5 +1,6 @@
 import argparse
 import logging
+import os
 
 from src.crawler import run_crawler
 from src.fuzzer import run_fuzzer
@@ -7,6 +8,9 @@ from src.headers import run_header_tester
 from src.param_fuzzer import run_param_fuzzer
 from src.scanner import run_scanner
 from src.util import port_parser
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+Parameter_path = os.path.join(BASE_DIR,"params.txt")
 
 logging.basicConfig(
     level=logging.INFO,
@@ -45,6 +49,9 @@ def main():
     param_fuzz_parser.add_argument('-u','--url',required=True)
     param_fuzz_parser.add_argument("-w","--wordlist",required=True)
 
+    # automation
+    auto_parser = subparser.add_parser("auto",help="Automatically crawl links and fuzz them")
+    auto_parser.add_argument("-u","--url",required=True)
     args = parser.parse_args()
 
     if args.command == "scan":
@@ -59,6 +66,21 @@ def main():
         run_fuzzer(args.url,args.wordlist,args.extension)
     elif args.command == "param_fuzz":
         run_param_fuzzer(args.url,args.wordlist)
+    elif args.command == "auto":
+        unique_links = set(run_crawler(args.url))
+        for link in unique_links:
+            if not link or not isinstance(link,str):
+                continue
+            if link.startswith(("mailto:","javascript:","#")):
+                continue
+            if not link.startswith("http"):
+                full_target = args.url.rstrip("/") + "/" + link.lstrip("/")
+            else:
+                full_target = link
+            if args.url in full_target:
+                if "?" in full_target or ".php" in full_target:
+                    print(f"\n[+] Auto-Starting Fuzzer on: {full_target}")
+                    run_param_fuzzer(full_target,Parameter_path)
 
 if __name__ == "__main__":
     main()

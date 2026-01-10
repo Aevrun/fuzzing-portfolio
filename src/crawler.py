@@ -1,12 +1,15 @@
+from lib2to3.btm_utils import reduce_tree
+
 from bs4 import BeautifulSoup
 import requests
 import logging
 import argparse
 
-def run_crawler(url: str) -> None:
+def run_crawler(url: str) -> list:
     interesting_keywords = ["admin", "login", "upload", "config"]
     # first lets ask the user for the url
     print("=" * 30)
+    discovered_links = []
     #url = input("Please enter the url you want to crawl:")
 
     try:
@@ -18,6 +21,7 @@ def run_crawler(url: str) -> None:
             for link in links:
                 href  = link.get('href')
                 print(f"FOUND:{href}")
+                discovered_links.append(href)
                 if href:
                     for each in interesting_keywords:
                         if each in href:
@@ -25,6 +29,8 @@ def run_crawler(url: str) -> None:
                             break
     except requests.exceptions.RequestException:
         print(f"[!] ERROR: unable to connect to the url: {url}")
+
+    return discovered_links
 
 
 if __name__ == '__main__':
