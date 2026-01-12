@@ -1,0 +1,108 @@
+2026-01-12 07:19:56,952 - INFO - ==============================
+2026-01-12 07:19:56,953 - INFO - Starting crawl for URL: https://www.google.com/
+2026-01-12 07:19:57,128 - INFO - Following links were scraped from the site(https://www.google.com/):
+2026-01-12 07:19:57,128 - INFO - FOUND:https://www.google.com/imghp?hl=de&tab=wi
+2026-01-12 07:19:57,128 - INFO - FOUND:https://maps.google.de/maps?hl=de&tab=wl
+2026-01-12 07:19:57,128 - INFO - FOUND:https://play.google.com/?hl=de&tab=w8
+2026-01-12 07:19:57,128 - INFO - FOUND:https://www.youtube.com/?tab=w1
+2026-01-12 07:19:57,128 - INFO - FOUND:https://news.google.com/?tab=wn
+2026-01-12 07:19:57,128 - INFO - FOUND:https://mail.google.com/mail/?tab=wm
+2026-01-12 07:19:57,128 - INFO - FOUND:https://drive.google.com/?tab=wo
+2026-01-12 07:19:57,128 - INFO - FOUND:https://www.google.de/intl/de/about/products?tab=wh
+2026-01-12 07:19:57,128 - INFO - FOUND:http://www.google.de/history/optout?hl=de
+2026-01-12 07:19:57,128 - INFO - FOUND:/preferences?hl=de
+2026-01-12 07:19:57,128 - INFO - FOUND:https://accounts.google.com/ServiceLogin?hl=de&passive=true&continue=https://www.google.com/&ec=GAZAAQ
+2026-01-12 07:19:57,129 - INFO - FOUND:/advanced_search?hl=de&authuser=0
+2026-01-12 07:19:57,129 - INFO - FOUND:/intl/de/ads/
+2026-01-12 07:19:57,129 - INFO - FOUND:/services/
+2026-01-12 07:19:57,129 - INFO - FOUND:/intl/de/about.html
+2026-01-12 07:19:57,129 - INFO - FOUND:https://www.google.com/setprefdomain?prefdom=DE&prev=https://www.google.de/&sig=K_eRM6YUzkO7zEm-Nl7Cr6Rzvbh_s%3D
+2026-01-12 07:19:57,129 - INFO - FOUND:/intl/de/policies/privacy/
+2026-01-12 07:19:57,129 - INFO - FOUND:/intl/de/policies/terms/
+2026-01-12 07:21:01,468 - INFO - ==============================
+2026-01-12 07:21:01,468 - INFO - Starting crawl for URL: https://www.google.com/
+2026-01-12 07:21:01,618 - INFO - Following links were scraped from the site(https://www.google.com/):
+2026-01-12 07:21:01,619 - INFO - FOUND:https://www.google.com/imghp?hl=de&tab=wi
+2026-01-12 07:21:01,619 - INFO - FOUND:https://maps.google.de/maps?hl=de&tab=wl
+2026-01-12 07:21:01,619 - INFO - FOUND:https://play.google.com/?hl=de&tab=w8
+2026-01-12 07:21:01,619 - INFO - FOUND:https://www.youtube.com/?tab=w1
+2026-01-12 07:21:01,619 - INFO - FOUND:https://news.google.com/?tab=wn
+2026-01-12 07:21:01,619 - INFO - FOUND:https://mail.google.com/mail/?tab=wm
+2026-01-12 07:21:01,619 - INFO - FOUND:https://drive.google.com/?tab=wo
+2026-01-12 07:21:01,619 - INFO - FOUND:https://www.google.de/intl/de/about/products?tab=wh
+2026-01-12 07:21:01,619 - INFO - FOUND:http://www.google.de/history/optout?hl=de
+2026-01-12 07:21:01,619 - INFO - FOUND:/preferences?hl=de
+2026-01-12 07:21:01,619 - INFO - FOUND:https://accounts.google.com/ServiceLogin?hl=de&passive=true&continue=https://www.google.com/&ec=GAZAAQ
+2026-01-12 07:21:01,619 - INFO - FOUND:/advanced_search?hl=de&authuser=0
+2026-01-12 07:21:01,619 - INFO - FOUND:/intl/de/ads/
+2026-01-12 07:21:01,619 - INFO - FOUND:/services/
+2026-01-12 07:21:01,619 - INFO - FOUND:/intl/de/about.html
+2026-01-12 07:21:01,619 - INFO - FOUND:https://www.google.com/setprefdomain?prefdom=DE&prev=https://www.google.de/&sig=K_0s2Wo2C-6rT7MJrV2xjufOYqiaE%3D
+2026-01-12 07:21:01,619 - INFO - FOUND:/intl/de/policies/privacy/
+2026-01-12 07:21:01,619 - INFO - FOUND:/intl/de/policies/terms/
+2026-01-12 07:21:01,619 - INFO - ==============================
+2026-01-12 07:21:34,403 - INFO - Starting crawl for URL: https://www.google.com/
+2026-01-12 07:21:34,551 - INFO - Following links were scraped from the site(https://www.google.com/):
+2026-01-12 07:21:34,552 - INFO - FOUND:https://www.google.com/imghp?hl=de&tab=wi
+2026-01-12 07:21:34,552 - INFO - FOUND:https://maps.google.de/maps?hl=de&tab=wl
+2026-01-12 07:21:34,552 - INFO - FOUND:https://play.google.com/?hl=de&tab=w8
+2026-01-12 07:21:34,552 - INFO - FOUND:https://www.youtube.com/?tab=w1
+2026-01-12 07:21:34,552 - INFO - FOUND:https://news.google.com/?tab=wn
+2026-01-12 07:21:34,552 - INFO - FOUND:https://mail.google.com/mail/?tab=wm
+2026-01-12 07:21:34,552 - INFO - FOUND:https://drive.google.com/?tab=wo
+2026-01-12 07:21:34,552 - INFO - FOUND:https://www.google.de/intl/de/about/products?tab=wh
+2026-01-12 07:21:34,552 - INFO - FOUND:http://www.google.de/history/optout?hl=de
+2026-01-12 07:21:34,552 - INFO - FOUND:/preferences?hl=de
+2026-01-12 07:21:34,552 - INFO - FOUND:https://accounts.google.com/ServiceLogin?hl=de&passive=true&continue=https://www.google.com/&ec=GAZAAQ
+2026-01-12 07:21:34,552 - INFO - FOUND:/advanced_search?hl=de&authuser=0
+2026-01-12 07:21:34,552 - INFO - FOUND:/intl/de/ads/
+2026-01-12 07:21:34,552 - INFO - FOUND:/services/
+2026-01-12 07:21:34,552 - INFO - FOUND:/intl/de/about.html
+2026-01-12 07:21:34,552 - INFO - FOUND:https://www.google.com/setprefdomain?prefdom=DE&prev=https://www.google.de/&sig=K_D2kaGS69luJ7ztuvkAg4YPtgEME%3D
+2026-01-12 07:21:34,552 - INFO - FOUND:/intl/de/policies/privacy/
+2026-01-12 07:21:34,552 - INFO - FOUND:/intl/de/policies/terms/
+2026-01-12 07:22:24,041 - INFO - Starting crawl for URL: https://www.google.com/
+2026-01-12 07:22:24,176 - INFO - Following links were scraped from the site(https://www.google.com/):
+2026-01-12 07:22:24,176 - INFO - FOUND:https://www.google.com/imghp?hl=de&tab=wi
+2026-01-12 07:22:24,176 - INFO - FOUND:https://maps.google.de/maps?hl=de&tab=wl
+2026-01-12 07:22:24,176 - INFO - FOUND:https://play.google.com/?hl=de&tab=w8
+2026-01-12 07:22:24,176 - INFO - FOUND:https://www.youtube.com/?tab=w1
+2026-01-12 07:22:24,176 - INFO - FOUND:https://news.google.com/?tab=wn
+2026-01-12 07:22:24,176 - INFO - FOUND:https://mail.google.com/mail/?tab=wm
+2026-01-12 07:22:24,176 - INFO - FOUND:https://drive.google.com/?tab=wo
+2026-01-12 07:22:24,176 - INFO - FOUND:https://www.google.de/intl/de/about/products?tab=wh
+2026-01-12 07:22:24,176 - INFO - FOUND:http://www.google.de/history/optout?hl=de
+2026-01-12 07:22:24,176 - INFO - FOUND:/preferences?hl=de
+2026-01-12 07:22:24,176 - INFO - FOUND:https://accounts.google.com/ServiceLogin?hl=de&passive=true&continue=https://www.google.com/&ec=GAZAAQ
+2026-01-12 07:22:24,176 - INFO - FOUND:/advanced_search?hl=de&authuser=0
+2026-01-12 07:22:24,176 - INFO - FOUND:/intl/de/ads/
+2026-01-12 07:22:24,176 - INFO - FOUND:/services/
+2026-01-12 07:22:24,176 - INFO - FOUND:/intl/de/about.html
+2026-01-12 07:22:24,176 - INFO - FOUND:https://www.google.com/setprefdomain?prefdom=DE&prev=https://www.google.de/&sig=K_2kAfwisizsfaaZ0e0GPQzl_46RI%3D
+2026-01-12 07:22:24,177 - INFO - FOUND:/intl/de/policies/privacy/
+2026-01-12 07:22:24,177 - INFO - FOUND:/intl/de/policies/terms/
+2026-01-12 07:26:51,013 - INFO - Beginning Header Testing for: https:/example.com
+2026-01-12 07:26:51,014 - INFO - [!] ERROR: could not connect to the target
+2026-01-12 07:27:03,116 - INFO - Beginning Header Testing for: https://example.com
+2026-01-12 07:27:03,568 - INFO - WARNING! X-Frame-Options is missing in the Header
+2026-01-12 07:27:03,569 - INFO - WARNING! Content-Security-Policy is missing in the Header
+2026-01-12 07:27:03,569 - INFO - WARNING! Strict-Transport-Security is missing in the Header
+2026-01-12 07:53:07,626 - INFO - Starting port scanning on 127.0.0.1 range((1, 500))
+2026-01-12 07:53:07,630 - INFO - SCANNER: Port 88 is open
+2026-01-12 07:53:07,646 - INFO - SCANNER: Port 445 is open
+2026-01-12 07:53:45,210 - INFO - Starting port scanning on 127.0.0.1 range((1, 500))
+2026-01-12 07:53:45,215 - INFO - SCANNER: Port 88 is open
+2026-01-12 07:53:45,229 - INFO - SCANNER: Port 445 is open
+2026-01-12 07:53:45,231 - INFO - Port Scanning for 127.0.0.1 done
+2026-01-12 07:54:20,458 - INFO - Starting port scanning on 127.0.0.1 range((1, 500))
+2026-01-12 07:54:20,463 - INFO - SCANNER: Port 88 is open
+2026-01-12 07:54:20,478 - INFO - SCANNER: Port 445 is open
+2026-01-12 07:54:20,480 - INFO - Port Scanning for 127.0.0.1 done
+2026-01-12 07:58:27,305 - INFO - Beginning Header Testing for: https://example.com
+2026-01-12 07:58:27,450 - INFO - WARNING! X-Frame-Options is missing in the Header
+2026-01-12 07:58:27,450 - INFO - WARNING! Content-Security-Policy is missing in the Header
+2026-01-12 07:58:27,451 - INFO - WARNING! Strict-Transport-Security is missing in the Header
+2026-01-12 07:59:20,725 - INFO - Beginning Header Testing for: https://example.com
+2026-01-12 07:59:20,852 - INFO - WARNING! X-Frame-Options is missing in the Header
+2026-01-12 07:59:20,852 - INFO - WARNING! Content-Security-Policy is missing in the Header
+2026-01-12 07:59:20,852 - INFO - WARNING! Strict-Transport-Security is missing in the Header

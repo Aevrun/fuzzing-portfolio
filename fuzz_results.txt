@@ -16,3 +16,12 @@ Found: http://testphp.vulnweb.com/vendor
 200Found: http://testphp.vulnweb.com/admin
 200Found: http://testphp.vulnweb.com/images
 200Found: http://testphp.vulnweb.com/vendor
+200Found: http://testphp.vulnweb.com/admin
+200Found: http://testphp.vulnweb.com/images
+200Found: http://testphp.vulnweb.com/vendor
+200 Found: http://testphp.vulnweb.com/admin
+200 Found: http://testphp.vulnweb.com/images
+200 Found: http://testphp.vulnweb.com/vendor
+200 Found: http://testphp.vulnweb.com/admin
+200 Found: http://testphp.vulnweb.com/images
+200 Found: http://testphp.vulnweb.com/vendor

@@ -1,0 +1,4 @@
+2026-01-12 08:00:05,203 - INFO - Beginning Header Testing for: https://example.com
+2026-01-12 08:00:05,333 - INFO - WARNING! X-Frame-Options is missing in the Header
+2026-01-12 08:00:05,333 - INFO - WARNING! Content-Security-Policy is missing in the Header
+2026-01-12 08:00:05,333 - INFO - WARNING! Strict-Transport-Security is missing in the Header

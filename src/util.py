@@ -1,5 +1,6 @@
 import logging
 import sys
+from urllib.parse import urlparse,parse_qs
 
 logging.basicConfig(
     level=logging.INFO,
@@ -9,6 +10,12 @@ logging.basicConfig(
         logging.StreamHandler()
     ]
 )
+
+def get_parameters(url):
+    """Extracts Parameter names from a URL string"""
+    parsed_url = urlparse(url)
+    params = parse_qs(parsed_url.query)
+    return list(params.keys())
 
 def port_parser(ports: str) -> tuple[int,int]:
     # Ports error checking

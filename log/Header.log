@@ -1,0 +1,8 @@
+2026-01-12 07:58:27,305 - INFO - Beginning Header Testing for: https://example.com
+2026-01-12 07:58:27,450 - INFO - WARNING! X-Frame-Options is missing in the Header
+2026-01-12 07:58:27,450 - INFO - WARNING! Content-Security-Policy is missing in the Header
+2026-01-12 07:58:27,451 - INFO - WARNING! Strict-Transport-Security is missing in the Header
+2026-01-12 07:59:20,725 - INFO - Beginning Header Testing for: https://example.com
+2026-01-12 07:59:20,852 - INFO - WARNING! X-Frame-Options is missing in the Header
+2026-01-12 07:59:20,852 - INFO - WARNING! Content-Security-Policy is missing in the Header
+2026-01-12 07:59:20,852 - INFO - WARNING! Strict-Transport-Security is missing in the Header

@@ -1,0 +1,22 @@
+2026-01-12 08:00:59,265 - INFO - Starting port scanning on 127.0.0.1 range((1, 500))
+2026-01-12 08:00:59,270 - INFO - SCANNER: Port 88 is open
+2026-01-12 08:00:59,284 - INFO - SCANNER: Port 445 is open
+2026-01-12 08:00:59,286 - INFO - Port Scanning for 127.0.0.1 done
+2026-01-12 08:07:16,602 - INFO - [200] Found: http://testphp.vulnweb.com/admin
+2026-01-12 08:07:16,604 - INFO - 200Found: http://testphp.vulnweb.com/admin
+
+2026-01-12 08:07:48,200 - INFO - [200] Found: http://testphp.vulnweb.com/images
+2026-01-12 08:07:48,202 - INFO - 200Found: http://testphp.vulnweb.com/images
+
+2026-01-12 08:07:55,800 - INFO - [200] Found: http://testphp.vulnweb.com/vendor
+2026-01-12 08:07:55,801 - INFO - 200Found: http://testphp.vulnweb.com/vendor
+
+2026-01-12 08:08:10,923 - INFO - [!] Link found: 3
+2026-01-12 08:08:36,145 - INFO - [200] Found: http://testphp.vulnweb.com/admin
+2026-01-12 08:09:07,563 - INFO - [200] Found: http://testphp.vulnweb.com/images
+2026-01-12 08:09:17,207 - INFO - [200] Found: http://testphp.vulnweb.com/vendor
+2026-01-12 08:09:32,287 - INFO - [!] Link found: 3
+2026-01-12 08:11:23,797 - INFO - [200] Found: http://testphp.vulnweb.com/admin
+2026-01-12 08:11:59,015 - INFO - [200] Found: http://testphp.vulnweb.com/images
+2026-01-12 08:12:06,537 - INFO - [200] Found: http://testphp.vulnweb.com/vendor
+2026-01-12 08:12:20,782 - INFO - [!] Link found: 3

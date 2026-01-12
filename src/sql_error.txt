@@ -1,0 +1,9 @@
+you have an error in your sql syntax
+warning: mysql
+unclosed quotation mark
+PostgreSQL query
+ORA-00933
+Microsoft OLE DB Provider for SQL Server
+Syntax error in query expression
+mysql_fetch_array
+mysql_num_rows

@@ -1,51 +1,48 @@
-from lib2to3.btm_utils import reduce_tree
+from pathlib import Path
 
 from bs4 import BeautifulSoup
 import requests
 import logging
-import argparse
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+LOG_DIR = BASE_DIR / "logs"
+LOG_DIR.mkdir(exist_ok=True)
+
+LOG_FILE = LOG_DIR / "crawler.log"
+
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler(LOG_FILE),
+        logging.StreamHandler()
+    ]
+)
 
 def run_crawler(url: str) -> list:
     interesting_keywords = ["admin", "login", "upload", "config"]
-    # first lets ask the user for the url
-    print("=" * 30)
+    print("=" * 50)
     discovered_links = []
-    #url = input("Please enter the url you want to crawl:")
-
+    logging.info("Starting crawl for URL: %s", url)
     try:
         response = requests.get(url)
         if response.status_code == 200:
             soup = BeautifulSoup(response.text, 'html.parser')
             links = soup.find_all('a')
-            print(f"Following links were scraped from the site({url}):")
+            logging.info(f"Following links were scraped from the site({url}):")
             for link in links:
                 href  = link.get('href')
-                print(f"FOUND:{href}")
+                logging.info(f"FOUND:{href}")
                 discovered_links.append(href)
                 if href:
                     for each in interesting_keywords:
                         if each in href:
                             print(f"[!]IMPORTANT: {link.get('href')}")
+                            logging.info(f"[!]IMPORTANT: {link.get('href')}")
                             break
     except requests.exceptions.RequestException:
         print(f"[!] ERROR: unable to connect to the url: {url}")
-
+        logging.error(f"[!] ERROR: unable to connect to the url: {url}")
+    print("=" * 50)
     return discovered_links
-
-
-if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description="Web Crawler to find links")
-
-    parser.add_argument('-l','--link', required=True, help='Link to the website to crawl (eg. https://www.google.com)')
-
-    logging.basicConfig(
-        level=logging.INFO,
-        format='%(asctime)s - %(levelname)s - %(message)s',
-        handlers=[
-            logging.FileHandler("Crawler.log"),
-            logging.StreamHandler()
-        ]
-    )
-
-    args = parser.parse_args()
-    run_crawler(args.link)

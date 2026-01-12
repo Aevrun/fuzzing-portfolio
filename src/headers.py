@@ -1,11 +1,24 @@
-import argparse
-import logging
 
 import requests
+import logging
 
+from src.crawler import LOG_DIR
+
+LOG_FILE = LOG_DIR / "Header.log"
+
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler(LOG_FILE),
+        logging.StreamHandler()
+    ], force=True
+)
 
 def run_header_tester(link: str) -> None:
         try:
+            print("=" * 50)
+            logging.info(f"Beginning Header Testing for: {link}")
             response = requests.get(link)
             code  = response.status_code
             if code == 200:
@@ -17,28 +30,9 @@ def run_header_tester(link: str) -> None:
                 for each in security_check:
                     if each not in header:
                         print("=" * 30)
-                        print(f"WARNING! {each} is missing in the Header")
+                        logging.info(f"WARNING! {each} is missing in the Header")
                         print("=" * 30)
 
         except requests.exceptions.RequestException:
-            print("=" * 30)
-            print("[!] ERROR: could not connect to the target")
-            print("=" * 30)
+            logging.error("[!] ERROR: could not connect to the target")
 
-
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Header Tester")
-
-    logging.basicConfig(
-        level=logging.INFO,
-        format='%(asctime)s - %(levelname)s - %(message)s',
-        handlers=[
-            logging.FileHandler('headers.log'),
-            logging.StreamHandler()
-        ]
-    )
-
-    parser.add_argument('-l','--link',required=True,help="Header Testing, simply enter the url of the website you want to check (eg. https://www.google.com)")
-    args = parser.parse_args()
-    url = args.link
-    run_header_tester(url)
